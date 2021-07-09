@@ -27,10 +27,12 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="row">
+    <div class="col-md-4">
+        <a asp-action="Index" class="btn btn-secondary btn-block">Back to List</a>
+    </div>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
